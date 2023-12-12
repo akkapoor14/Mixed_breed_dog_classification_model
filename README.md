@@ -1,4 +1,9 @@
-For my Princeton Junior Project, I created the first public mixed breed dog dataset, and first mixed breed dog classification model. 
+For my Princeton Junior Project, I created the first public mixed breed dog dataset, and first mixed breed dog classification model. There are many studies that have applied machine learning to classifying purebred dogs, but
+none that have attempted to predict breed percentages of mixed breed dogs. Creating such a tool
+would be incredibly useful as knowing the breed makeup of a dog will help with predicting a
+dog’s temperament, size, and predisposition for medical conditions. Since there isn’t sufficient
+mixed breed dog data to train a model dedicated to this task, I was curious if a purebred dog
+classification model could be adapted to classify mixed breed dogs.
 
 My approach: 
 1. First, I created my own dataset
@@ -19,8 +24,8 @@ images - in comparison, the Stanford Purebred Dog Dataset is 20,000 photos, and 
 Xception model was trained on over a million images in the ImageNet database. The mixed
 breed dog dataset is far too small to train a model specifically for the task of mixed breed dog
 classification, especially when there are 339 dog breeds in the world, and thus approximately
-2 possible combinations of mixed breed dogs. Thus, my approach tries to leverage these 339
-larger datasets to help train our model for the ultimate task of classifying mixed breed dogs.)
+2^339 possible combinations of mixed breed dogs. Thus, my approach tries to leverage these 
+larger datasets to help train this model for the ultimate task of classifying mixed breed dogs.)
 
 Results: 
 Prior to fine-tuning, the model was able to predict the top breed of a mixed breed dog 9.3% of the time, while after fine-tuning, the model was able to 
